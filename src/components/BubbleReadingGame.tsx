@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import backgroundImg from "../assets/background.webp";
 
 const GAME_DURATION = 30;
 
@@ -101,7 +102,7 @@ export default function BubbleReadingGame() {
 
   return (
     <div className='game-root'>
-      <img src='/background.webp' alt='background' className='bg-img' />
+      <img src={backgroundImg} alt='background' className='bg-img' />
 
       {phase === "intro" && (
         <div className='overlay intro'>
@@ -183,8 +184,8 @@ function Bubble({ left, top, number }: BubbleProps) {
 
         <text
           x='50'
-          y='58'
-          fontSize='24'
+          y='56'
+          fontSize='32'
           fontWeight='700'
           textAnchor='middle'
           fill='#0f172a'
