@@ -111,15 +111,12 @@ export default function BubbleReadingGame() {
             <p>
               Appuie sur <strong>ESPACE</strong> pour commencer
             </p>
-            <audio autoPlay src='/assets/intro.mp3' />
           </div>
         </div>
       )}
 
       {phase === "running" && (
         <>
-          <div className='sprite-walk' />
-
           {currentBubble && (
             <Bubble
               left={currentBubble.left}
@@ -191,6 +188,7 @@ function Bubble({ left, top, number }: BubbleProps) {
           fontWeight='700'
           textAnchor='middle'
           fill='#0f172a'
+          dominantBaseline='auto'
         >
           {number}
         </text>

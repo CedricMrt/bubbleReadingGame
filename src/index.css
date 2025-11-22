@@ -44,43 +44,7 @@ button {
   box-shadow: 0 8px 24px rgba(255, 255, 255, 0.2);
   text-shadow: 0 8px 5px rgba(0, 0, 0, 0.5);
 }
-.sprite-climb,
-.sprite-walk {
-  background-repeat: no-repeat;
-}
-.sprite-climb {
-  width: 192px;
-  height: 192px;
-  background-image: url("/assets/character-sprite.svg");
-  background-size: 768px 192px;
-  animation: climb 1000ms steps(4) forwards;
-}
-@keyframes climb {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: -576px 0;
-  }
-}
-.sprite-walk {
-  position: absolute;
-  left: 20px;
-  bottom: 20px;
-  width: 112px;
-  height: 112px;
-  background-image: url("/assets/character-sprite.svg");
-  background-size: 448px 112px;
-  animation: walk 800ms steps(4) infinite;
-}
-@keyframes walk {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: -336px 0;
-  }
-}
+
 .progress-bar {
   position: absolute;
   left: 0;
